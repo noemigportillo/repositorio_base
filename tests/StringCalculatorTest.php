@@ -45,4 +45,13 @@ final class StringCalculatorTest extends TestCase
 
         $this->assertEquals(6, $sumResult);
     }
+
+    public function test_add_endures_different_specified_delimiters_in_numbers_string()
+    {
+        $stringCalculator = new StringCalculator();
+
+        $sumResult = $stringCalculator->add("//;\n1;2;3");
+
+        $this->assertEquals(6, $sumResult);
+    }
 }
