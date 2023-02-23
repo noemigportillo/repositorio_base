@@ -54,4 +54,13 @@ final class StringCalculatorTest extends TestCase
 
         $this->assertEquals(6, $sumResult);
     }
+
+    public function test_add_doesnt_endures_negative_numbers()
+    {
+        $stringCalculator = new StringCalculator();
+
+        $sumResult = $stringCalculator->add("//;\n-1;2;-3");
+
+        $this->assertEquals(-1, $sumResult);
+    }
 }
