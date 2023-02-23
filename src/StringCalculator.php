@@ -16,6 +16,9 @@ class StringCalculator
         try{
             if(!$this->contains_negative_numbers($numbers_to_add)){
                 if(is_numeric($numbers_to_add)){
+                    if((int)$numbers_to_add>1000){
+                        return 0;
+                    }
                     return (int)$numbers_to_add;
                 }
 
@@ -31,7 +34,9 @@ class StringCalculator
 
                 $numbers_sum = 0;
                 for($number_position = 0; $number_position < count($separated_numbers); $number_position++){
-                    $numbers_sum += (int)$separated_numbers[$number_position];
+                    if((int)$separated_numbers[$number_position]<=1000){
+                        $numbers_sum += (int)$separated_numbers[$number_position];
+                    }
                 }
                 return $numbers_sum;
             }

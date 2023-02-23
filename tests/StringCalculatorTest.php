@@ -63,4 +63,13 @@ final class StringCalculatorTest extends TestCase
 
         $this->assertEquals(-1, $sumResult);
     }
+
+    public function test_numbers_bigger_than_1000_ignored()
+    {
+        $stringCalculator = new StringCalculator();
+
+        $sumResult = $stringCalculator->add("//;\n1005;2;3");
+
+        $this->assertEquals(5, $sumResult);
+    }
 }
