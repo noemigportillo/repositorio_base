@@ -72,4 +72,13 @@ final class StringCalculatorTest extends TestCase
 
         $this->assertEquals(5, $sumResult);
     }
+
+    public function test_add_endures_specified_delimiter_in_numbers_string_between_square_brakets()
+    {
+        $stringCalculator = new StringCalculator();
+
+        $sumResult = $stringCalculator->add("//[*,*]\n1*,*2*,*3");
+
+        $this->assertEquals(6, $sumResult);
+    }
 }
