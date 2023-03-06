@@ -10,7 +10,7 @@ use PHPUnit\Framework\TestCase;
 final class StringCalculatorTest extends TestCase
 {
     // TODO: String Calculator Kata Tests
-    public function test_0_if_string_empty()
+    public function tesT0IfStringEmpty()
     {
         $stringCalculator = new StringCalculator();
 
@@ -19,7 +19,7 @@ final class StringCalculatorTest extends TestCase
         $this->assertEquals(0, $sumResult);
     }
 
-    public function test_one_number_string_returns_its_value()
+    public function testOneNumberStringReturnsItsValue()
     {
         $stringCalculator = new StringCalculator();
 
@@ -28,7 +28,7 @@ final class StringCalculatorTest extends TestCase
         $this->assertEquals(1, $sumResult);
     }
 
-    public function test_more_than_one_number_string_returns_the_sum()
+    public function testMoreThanOneNumberStringReturnsTheSum()
     {
         $stringCalculator = new StringCalculator();
 
@@ -37,7 +37,7 @@ final class StringCalculatorTest extends TestCase
         $this->assertEquals(6, $sumResult);
     }
 
-    public function test_add_endures_line_break_and_comma_as_delimiter_in_numbers_string()
+    public function testAddEnduresLineBreakAndCommaAsDelimiterInNumbersString()
     {
         $stringCalculator = new StringCalculator();
 
@@ -46,7 +46,7 @@ final class StringCalculatorTest extends TestCase
         $this->assertEquals(6, $sumResult);
     }
 
-    public function test_add_endures_different_specified_delimiters_in_numbers_string()
+    public function testAddEnduresDifferentSpecifiedDelimitersInNumbersString()
     {
         $stringCalculator = new StringCalculator();
 
@@ -55,7 +55,7 @@ final class StringCalculatorTest extends TestCase
         $this->assertEquals(6, $sumResult);
     }
 
-    public function test_add_doesnt_endures_negative_numbers()
+    public function testAddDoesntEnduresNegativeNumbers()
     {
         $stringCalculator = new StringCalculator();
 
@@ -64,7 +64,7 @@ final class StringCalculatorTest extends TestCase
         $this->assertEquals(-1, $sumResult);
     }
 
-    public function test_numbers_bigger_than_1000_ignored()
+    public function testNumbersBiggerThan1000Ignored()
     {
         $stringCalculator = new StringCalculator();
 
@@ -73,7 +73,7 @@ final class StringCalculatorTest extends TestCase
         $this->assertEquals(5, $sumResult);
     }
 
-    public function test_add_endures_specified_delimiter_in_numbers_string_between_square_brakets()
+    public function testAddEnduresSpecifiedDelimiterInNumbersStringBetweenSquareBrakets()
     {
         $stringCalculator = new StringCalculator();
 
