@@ -77,7 +77,7 @@ final class StringCalculatorTest extends TestCase
     {
         $stringCalculator = new StringCalculator();
 
-        $sumResult = $stringCalculator->add("//[*,*]\n1*,*2*,*3");
+        $sumResult = $stringCalculator->add("//[*,;]\n1*,;2*,;3");
 
         $this->assertEquals(6, $sumResult);
     }
