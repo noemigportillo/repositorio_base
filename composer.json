@@ -9,7 +9,8 @@
         "phpunit/phpunit": "^9.6",
         "squizlabs/php_codesniffer": "*",
         "phpmd/phpmd": "^2.13",
-        "phpro/grumphp": "^1.15"
+        "phpro/grumphp": "^1.15",
+        "mockery/mockery": "^1.5"
     },
     "minimum-stability": "stable",
     "prefer-stable": true,
