@@ -17,3 +17,5 @@ ejemplo base.
 - Los namespace se cambian en el archivo composer.json. Una vez cambiados hay
 que ejecutar `composer dump-autoload` para regenerar las cosas del composer
 con el nuevo namespace.
+
+- Si el repositorio furula mal, bórralo y vuelve a clonarlo.
