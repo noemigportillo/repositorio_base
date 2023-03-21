@@ -15,5 +15,5 @@ en algún otro.
 ejemplo base.
 
 - Los namespace se cambian en el archivo composer.json. Una vez cambiados hay
-que ejecuta `composer dump-autoload` para regenerar las cosas del composer
+que ejecutar `composer dump-autoload` para regenerar las cosas del composer
 con el nuevo namespace.
