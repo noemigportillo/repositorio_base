@@ -8,10 +8,12 @@ El repositorio base cuenta con las instalaciones necesarias para enfrentarse
 a problemas futuros.
 
 ## ATENCION
-Este repositorio hay que actualizarlo conforme vayamos instalando más cosas
+- Este repositorio hay que actualizarlo conforme vayamos instalando más cosas
 en algún otro. 
 
-Voy a dejar el código de StringCalculator.php y StringCalculatorTest.php como
+- Voy a dejar el código de StringCalculator.php y StringCalculatorTest.php como
 ejemplo base.
 
-PRUEBA
+- Los namespace se cambian en el archivo composer.json. Una vez cambiados hay
+que ejecuta `composer dump-autoload` para regenerar las cosas del composer
+con el nuevo namespace.
