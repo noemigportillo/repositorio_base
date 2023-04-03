@@ -19,3 +19,12 @@ que ejecutar `composer dump-autoload` para regenerar las cosas del composer
 con el nuevo namespace.
 
 - Si el repositorio furula mal, bórralo y vuelve a clonarlo.
+
+## Para instalar grumphp en un repositorio
+- Copiar y pegar en la carpeta correspondiente el archivo grumphp.yml de
+este repositorio.
+- Entrar en el docker (docker exec -it ...)
+- Ejecutar estos 3 comandos:
+  - composer require --dev squizlabs/php_codesniffer
+  - composer require --dev phpmd/phpmd
+  - composer require --dev phpro/grumphp
