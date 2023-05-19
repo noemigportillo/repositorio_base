@@ -16,8 +16,8 @@ final class StringCalculatorTest extends TestCase
         $this->stringCalculator = new StringCalculator();
     }
 
-    // TODO: String Calculator Kata Tests
-    public function tesT0IfStringEmpty()
+
+    public function test0IfStringEmpty()
     {
         $sumResult = $this->stringCalculator->add("");
 
